@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form id="login-form">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script>
+        const supabaseUrl = 'https://skyrbuelauzbedgignph.supabase.co';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNreXJidWVsYXV6YmVkZ2lnbnBoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDk2MTY1NjQsImV4cCI6MjAyNTE5MjU2NH0.gzYzpurOFRNpFYlFzWPU9W2C23f5pttBGgnY70jmykA';
+        const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+        document.getElementById('login-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                const { user, error } = await supabase.auth.signIn({ email, password });
+                if (error) {
+                    console.error(error.message);
+                    return;
+                }
+                console.log('User signed in:', user);
+                // Redirect or show success message
+            } catch (error) {
+                console.error('Error signing in:', error.message);
+            }
+        });
+    </script>
+</body>
+</html>
