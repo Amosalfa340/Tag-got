@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Contact Us</h1>
@@ -25,25 +25,6 @@
     <button type="submit">Submit</button>
   </form>
 
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      
-      // Capture form data
-      var formData = new FormData(this);
-
-      // Send form data to PHP script
-      axios.post('submit_contact.php', formData)
-        .then(function(response) {
-          console.log(response.data);
-          alert('Contact form submitted successfully!');
-          // Optionally, redirect the user to a thank you page
-        })
-        .catch(function(error) {
-          console.error('Error submitting contact form:', error);
-          alert('Error submitting contact form. Please try again later.');
-        });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
