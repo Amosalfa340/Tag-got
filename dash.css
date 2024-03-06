@@ -1,0 +1,156 @@
+body {
+  font-family:roboto condensed, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.spacer {
+  flex-grow: 5;
+}
+
+.setting-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.dashboard {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #007bff;
+  font-size: 24px;
+}
+
+.buttons {
+  display:flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.big-buttons {
+  display: flex;
+  gap: 40px;
+  justify-content:space-betwee;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.deposit-btn {
+  background-color: #007bff;
+}
+
+.withdraw-btn {
+  background-color: #17a2b8;
+}
+
+.history-btn {
+  background-color: #007bff;
+}
+
+.profile-btn {
+  background-color: #001041;
+}
+
+.promo-btn {
+  background-color: #17a2b8;
+}
+.score-section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.score-section h2 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.score-list {
+  list-style: none;
+  padding: 0;
+}
+
+.score-list li {
+  margin-bottom: 10px;
+}
+
+.score-list a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.score-list a i {
+  margin-right: 10px;
+}
+
+.settings-section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.settings-section h2 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.settings-list {
+  list-style: none;
+  padding: 0;
+}
+
+.settings-list li {
+  margin-bottom: 10px;
+}
+
+.settings-list a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.settings-list a i {
+  margin-right: 10px;
+  
+}
