@@ -40,7 +40,7 @@ document.getElementById('createAccountForm').addEventListener('submit', function
       })
       .then(() => {
         // Redirect to dashboard or another page upon successful signup
-        window.location.href = 'dashboard.html';
+        window.location.href = 'dash.html';
       })
       .catch((error) => {
         console.error('Error saving user data:', error);
